@@ -1,0 +1,7 @@
+<h1>Testing AngularFire SSR</h1>
+
+<ng-container *ngIf="testData | async as testData">
+	<ul>
+		<li *ngFor="let data of testData">NAME: {{ data.name }} [ACTIVE: {{ data.active }}]</li>
+	</ul>
+</ng-container>

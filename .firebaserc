@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "testing-b5576": {
+      "hosting": {
+        "ssr-test": [
+          "testing-b5576"
+        ]
+      }
+    }
+  }
+}
