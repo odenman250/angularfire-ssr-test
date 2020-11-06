@@ -17,10 +17,8 @@ export class HomeComponent implements OnInit {
 	testData: Observable<TestData>;
 
 	constructor(private router: ActivatedRoute) {
-		console.log(this.router.snapshot.data);
 		this.testData = this.router.data.pipe(
 			map(data => {
-				console.log(data);
 				const resolvedData = data['testData'];
 				console.log(resolvedData);
 				return resolvedData;
